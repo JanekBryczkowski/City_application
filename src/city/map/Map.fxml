@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.chart.LineChart?>
-<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="city.map.MapController">
-   <children>
-      <LineChart fx:id="lineChart" alternativeColumnFillVisible="true" layoutX="8.0" legendSide="LEFT" legendVisible="false" prefHeight="450.0" prefWidth="700.0" title="Map">
-        <xAxis>
-          <NumberAxis label="X-Coordinates" prefHeight="30.0" prefWidth="615.0" side="BOTTOM" tickLabelGap="10.0" fx:id="xAxis">
-               <tickLabelFont>
-                  <Font name="Cambria" size="12.0" />
-               </tickLabelFont></NumberAxis>
-        </xAxis>
-        <yAxis>
-          <NumberAxis fx:id="yAxis" label="Y-Coordinates" side="LEFT" tickLabelGap="10.0">
-               <tickLabelFont>
-                  <Font name="Cambria" size="12.0" />
-               </tickLabelFont></NumberAxis>
-        </yAxis>
-         <cursor>
-            <Cursor fx:constant="SW_RESIZE" />
-         </cursor>
-      </LineChart>
-   </children>
-</AnchorPane>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="city.map.MapController" />

@@ -40,6 +40,20 @@ public class Main extends Application {
         mainLayout.setCenter(map);
     }
 
+    public static void showList() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("list/List.fxml"));
+        AnchorPane list = loader.load();
+        mainLayout.setCenter(list);
+    }
+
+    public static void showFind() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("find/Find.fxml"));
+        AnchorPane list = loader.load();
+        mainLayout.setCenter(list);
+    }
+
 
     public static void main(String[] args) {
         launch(args);
