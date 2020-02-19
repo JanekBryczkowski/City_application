@@ -1,14 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="city.add.Add"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="city.add.AddController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ccff99;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Separator prefWidth="200.0" style="-fx-background-color: #000000;" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: #cccc00;" text="Adding new city">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" style="-fx-background-color: #000000;" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: #ccff00;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New city's name:">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #ccff00;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New city's X-coordinate:">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #ccff00;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New city's Y-coordinate:">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" style="-fx-background-color: #000000;" />
+            <VBox maxHeight="100000.0" maxWidth="800.0" minHeight="0.0" minWidth="800.0" prefHeight="180.0" prefWidth="800.0" style="-fx-background-color: #ccff33;">
+               <children>
+                  <Label alignment="CENTER" maxWidth="800.0" minHeight="40.0" minWidth="800.0" prefHeight="40.0" prefWidth="800.0" text="Connections of the new city:" textFill="#e80000">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <HBox alignment="CENTER" maxHeight="45.0" maxWidth="600.0" minHeight="45.0" minWidth="600.0" prefHeight="45.0" prefWidth="600.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1st connection: ">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin></Text>
+                        <ComboBox prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" maxHeight="45.0" maxWidth="600.0" minHeight="45.0" minWidth="600.0" prefHeight="45.0" prefWidth="600.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2nd connection:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin></Text>
+                        <ComboBox prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_RIGHT" maxWidth="600.0" minHeight="45.0" minWidth="600.0" prefHeight="47.0" prefWidth="600.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="30.0" maxWidth="125.0" minHeight="30.0" minWidth="125.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" style="-fx-border-radius: 10;" text="Add new connection" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" style="-fx-background-color: #000000;" />
+            <HBox alignment="CENTER_RIGHT" maxWidth="600.0" minWidth="570.0" prefHeight="63.0" prefWidth="570.0">
+               <children>
+                  <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" prefWidth="100.0" text="Confirm" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

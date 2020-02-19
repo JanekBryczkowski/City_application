@@ -4,13 +4,13 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="city.list.ListController">
+<AnchorPane maxHeight="550.0" maxWidth="800.0" minHeight="550.0" minWidth="800.0" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="city.list.ListController">
     <children>
-        <TableView editable="true" layoutY="-6.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff99;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+        <TableView layoutY="-6.0" prefHeight="400.0" prefWidth="800.0" scaleShape="false" style="-fx-background-color: #ffff99;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
             <columns>
-                <TableColumn prefWidth="236.0" style="-fx-background-color: #ffff99; -fx-font-size: 16;" text="Name" />
-                <TableColumn maxWidth="200.0" minWidth="200.0" prefWidth="200.0" style="-fx-background-color: #ffd966; -fx-font-size: 16;" text="X-Coordinate" />
-                <TableColumn maxWidth="200.0" minWidth="200.0" prefWidth="200.0" style="-fx-background-color: #ff8c66; -fx-font-size: 16;" text="Y-Coordinate" />
+                <TableColumn editable="false" prefWidth="236.0" sortable="false" style="-fx-background-color: #ffff99; -fx-font-size: 16;" text="Name" />
+                <TableColumn editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" sortable="false" style="-fx-background-color: #ffd966; -fx-font-size: 16;" text="X-Coordinate" />
+                <TableColumn editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" sortable="false" style="-fx-background-color: #ff8c66; -fx-font-size: 16;" text="Y-Coordinate" />
             </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

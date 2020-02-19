@@ -1,6 +1,7 @@
 package city;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -50,8 +51,15 @@ public class Main extends Application {
     public static void showFind() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("find/Find.fxml"));
-        AnchorPane list = loader.load();
-        mainLayout.setCenter(list);
+        AnchorPane find = loader.load();
+        mainLayout.setCenter(find);
+    }
+
+    public static void showAdd() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("add/Add.fxml"));
+        AnchorPane add = loader.load();
+        mainLayout.setCenter(add);
     }
 
 

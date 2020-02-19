@@ -5,28 +5,28 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #dfff80;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #dfff80;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="city.view.MainViewController">
    <top>
       <HBox prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ccff33;" text="Map">
+            <Button fx:id="mapButton" mnemonicParsing="false" onAction="#goMap" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ccff33;" text="Map">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ace600;" text="List of cities">
+            <Button fx:id="listButton" mnemonicParsing="false" onAction="#goList" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ace600;" text="List of cities">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #86b300;" text="Find city">
+            <Button fx:id="findButton" mnemonicParsing="false" onAction="#goFind" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #86b300;" text="Find city">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #608000;" text="Add new city">
+            <Button fx:id="addNewCityButton" mnemonicParsing="false" onAction="#goAdd" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #608000;" text="Add new city">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
          </children>

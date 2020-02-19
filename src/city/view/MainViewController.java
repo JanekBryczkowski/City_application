@@ -24,4 +24,9 @@ public class MainViewController {
         main.showFind();
     }
 
+    @FXML
+    private void goAdd() throws IOException{
+        main.showAdd();
+    }
+
 }
