@@ -47,4 +47,5 @@ public class Town {
     public void setConnections(List connections) {
         this.connections = connections;
     }
+
 }

@@ -10,6 +10,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.Arrays;
 
 public class Main extends Application {
 
@@ -17,12 +19,21 @@ public class Main extends Application {
     private static BorderPane mainLayout;
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage primaryStage) throws IOException, SQLException {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("City Application");
 
+
         showMainView();
         showMap();
+
+
+        Town a = new Town("Poznań",1,3,Arrays.asList("Sopot", "Gdansk"));
+        DataBaseStuff.saveTownInDB(a);
+
+        System.out.println(DataBaseStuff.getTownsFromDB().get(0).getName());
+        System.out.println(DataBaseStuff.getTownsFromDB().get(1).getName());
+
     }
 
     private void showMainView() throws IOException {
@@ -66,6 +77,7 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 
 
 }
